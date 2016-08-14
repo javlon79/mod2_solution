@@ -1,0 +1,77 @@
+/*  Base view (992px and above)  */
+*{
+	margin: 0;
+	padding: 0;	
+}
+
+body {
+	color: #000000;
+	font-family: Verdana, Arial;
+	
+}
+h1 {
+	margin: 30px 0 40px 0;
+	font-size: 1.75em;
+	text-transform: capitalize;	
+	text-align: center;
+}
+
+#block1,
+#block2,
+#block3{
+	position: relative;
+	width: 31%;
+	float:left;
+	margin-left: 15px;
+	border: 1px solid black;
+	//height: 350px;
+	overflow: hidden;	
+}
+
+#block1{background: #d2d200;}
+#block2{background: #00f1f2;}
+#block3{background: #ffd2fa;}
+
+
+.title , p {
+	font-size: 1.25em;
+}
+
+.title{
+	padding: 3px 0 ;
+	display: block;
+	position: absolute;
+	right: -1px;
+	border: 1px solid black;
+	width: 120px;
+	text-align: center;
+	top: -1px;
+	font-weight: bold;
+}
+p {
+	text-align: justify;
+	padding: 35px 8px 5px 8px ;
+}
+
+/* -  tablet view    */
+@media (min-width:768px) and (max-width:991px){
+	#block1,#block2 {
+		float: left;
+		width: 45%;}
+	#block3{
+		margin-top:15px; 
+		clear: left;
+		width: 92%;}	
+}
+
+/*   mobile view */
+@media (max-width:767px){ 
+	#block1,#block2,#block3 {
+		float: left;
+		width: 90%;
+		margin-bottom:15px;
+		height: 300px;
+		overflow: hidden;
+	}
+}
+		
